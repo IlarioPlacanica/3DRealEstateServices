@@ -148,7 +148,7 @@
             contactTitle: 'Let’s build work that feels premium, clear, and impossible to ignore.'
         },
 
-        it: {
+       it: {
             pageTitle: 'Ilario Placanica — Esperienze Web per Architettura e Real Estate',
             metaDescription:
                 'Ilario Placanica — visualizzazione 3D per il web, strumenti immersivi per il real estate, landing page ed esperienze interattive per la presentazione di immobili.',
@@ -160,18 +160,18 @@
             heroText:
                 '3D visualizer specializzato in storytelling architettonico, strumenti interattivi per il real estate, esperienze immersive sul web e landing page per la presentazione di immobili.',
             heroFooter:
-                'Disponibile per archviz premium, sistemi di presentazione immobiliare, landing page ed esperienze immersive web per architettura e marketing immobiliare.',
+                'Disponibile per progetti di archviz premium, sistemi di presentazione immobiliare, landing page ed esperienze web immersive per l’architettura e il marketing immobiliare.',
             selectedWorkEyebrow: 'Progetti selezionati',
             selectedWorkTitle: 'Pochi progetti. Un punto di vista forte.',
             indexWork1Title: 'Esperienza Immersiva per il Real Estate',
-            indexWork1Meta: 'Unreal Engine / presentazione vendite real-time / storytelling architettonico',
+            indexWork1Meta: 'Unreal Engine / presentazione di vendita real-time / storytelling architettonico',
             indexWork2Title: 'Schede Immersive per Immobili',
-            indexWork2Meta: 'Presentazione web / virtual tour / showcase digitale immobiliare',
+            indexWork2Meta: 'Presentazione web / virtual tour / showcase immobiliare digitale',
             indexWork3Title: 'Landing Page per la Presentazione Immobiliare',
             indexWork3Meta: 'Web design / layout orientato alla conversione / storytelling immersivo del prodotto',
             roleLabel: 'Ruolo',
             toolsLabel: 'Strumenti',
-            whyItMattersLabel: 'Perché conta',
+            whyItMattersLabel: 'Perché è importante',
             workflowLabel: 'Workflow',
             premiseLabel: 'Premessa',
             focusLabel: 'Focus',
@@ -181,81 +181,82 @@
             visitApartmentPage: "Visita la pagina dell'appartamento",
             visitLandingPage: 'Visita la landing page',
             urbanViewerTitle: 'Urban Viewer',
-            openUrbanViewer: 'Apri urban viewer',
-            open360Tour: 'Apri tour 360',
+            openUrbanViewer: 'Apri Urban Viewer',
+            open360Tour: 'Apri il tour 360',
 
-            work1Title: 'Esperienza Immersiva per il Real Estate per Primula Costruzioni',
+            work1Title: 'Esperienza Immersiva per il Real Estate di Primula Costruzioni',
             work1Text:
-                "Software di visualizzazione architettonica in tempo reale sviluppato in Unreal Engine 5 per supportare la vendita e la presentazione di un nuovo edificio residenziale nel suo contesto urbano. Il progetto permette l'esplorazione interattiva dell'architettura e degli spazi interni tramite rendering real-time, luce naturale dinamica e un'interfaccia pensata per touchscreen.",
+                "Software di visualizzazione architettonica in tempo reale sviluppato in Unreal Engine 5 per supportare la vendita e la presentazione di un nuovo edificio residenziale inserito nel suo contesto urbano. Il progetto consente un'esplorazione interattiva dell'architettura e degli spazi interni attraverso rendering real-time, luce naturale dinamica e un'interfaccia pensata per il touchscreen.",
             work1Role:
                 'Visualizzazione 3D, assemblaggio dell’ambiente, design dell’interfaccia, sviluppo Blueprint e presentazione real-time.',
             work1BodyTitle: 'Uno strumento di vendita, non solo un render.',
             work1BodyText:
-                'L’esperienza è stata progettata per rendere il progetto leggibile e desiderabile in tempo reale. Invece di affidarsi solo a immagini statiche, l’interfaccia supporta navigazione attiva, variazione della luce diurna e comprensione dello spazio durante le presentazioni ai clienti.',
+                'L’esperienza è stata progettata per rendere il progetto leggibile e desiderabile in tempo reale. Invece di affidarsi soltanto a immagini statiche, l’interfaccia favorisce una navigazione attiva, la variazione della luce naturale e una migliore comprensione dello spazio durante le presentazioni ai clienti.',
             work1Bullet1: 'Visualizzazione real-time',
-            work1Bullet2: 'Sistema dinamico di daylight',
-            work1Bullet3: 'UX pensata per touchscreen',
-            work1Bullet4: 'Presentazione consapevole del contesto',
+            work1Bullet2: 'Sistema dinamico della luce diurna',
+            work1Bullet3: 'UX pensata per il touchscreen',
+            work1Bullet4: 'Presentazione attenta al contesto',
             work1WorkflowTitle: 'Dal contesto modellato all’eseguibile finale.',
-            work1Step1Title: 'Modeling dell’edificio e del contesto',
+            work1Step1Title: 'Modellazione dell’edificio e del contesto',
             work1Step1Text:
                 'L’intervento architettonico e il quartiere circostante sono stati modellati in Blender per creare una base pulita e controllabile per la visualizzazione in tempo reale.',
             work1Step2Title: 'Assemblaggio in Unreal e integrazione geospaziale',
             work1Step2Text:
-                'Il progetto è stato assemblato in Unreal, arricchito con dati di contesto Cesium, materiali, illuminazione, arredi e atmosfera per migliorarne leggibilità e immersione.',
+                'Il progetto è stato assemblato in Unreal e arricchito con dati di contesto di Cesium, materiali, illuminazione, arredi e atmosfera, così da migliorarne leggibilità e immersione.',
             work1Step3Title: 'Sistemi interattivi e packaging',
             work1Step3Text:
-                'Sono stati sviluppati logica Blueprint, widget, comportamento del GameMode e sistemi di controllo per l’interazione touchscreen, poi il progetto è stato pacchettizzato come applicazione Windows standalone.',
+                'Sono stati sviluppati la logica Blueprint, i widget, il comportamento del GameMode e i sistemi di controllo per l’interazione touchscreen; successivamente, il progetto è stato pacchettizzato come applicazione standalone per Windows.',
 
-            work2Title: 'Schede Immersive per Immobili per Primula Costruzioni',
+            work2Title: 'Schede Immersive per Immobili di Primula Costruzioni',
             work2Text:
-                'Una serie di pagine immersive dedicate agli appartamenti, create per supportare la presentazione e la vendita di unità ristrutturate all’interno di un edificio esistente. Ogni immobile è stato tradotto in un’esperienza digitale dedicata, centrata su interni, chiarezza e atmosfera, poi pubblicata sul web.',
+                'Una serie di pagine immersive dedicate agli appartamenti, create per supportare la presentazione e la vendita di unità ristrutturate all’interno di un edificio esistente. Ogni immobile è stato tradotto in un’esperienza digitale dedicata, incentrata sugli interni, sulla chiarezza e sull’atmosfera, per poi essere pubblicata sul web.',
             work2Role:
                 'Produzione 3D, direzione dei render, layout visivo, integrazione del virtual tour e presentazione web.',
             work2BodyTitle: 'Storytelling immobiliare centrato sugli interni.',
             work2BodyText:
-                'Poiché la ristrutturazione dell’edificio era parziale, la comunicazione si è concentrata sulla qualità degli interni, sulle panoramiche navigabili e sulla presentazione digitale dell’immobile, invece che su un’esperienza esterna completamente spazializzata.',
-            work2WorkflowTitle: 'Dalle scene di interni alla pubblicazione web.',
-            work2Step1Title: 'Modeling e setup della scena',
+                'Poiché la ristrutturazione dell’edificio era parziale, la comunicazione si è concentrata sulla qualità degli interni, sulle panoramiche navigabili e sulla presentazione digitale dell’immobile, più che su un’esperienza esterna completamente spazializzata.',
+            work2WorkflowTitle: 'Dalle scene d’interni alla pubblicazione sul web.',
+            work2Step1Title: 'Modellazione e setup della scena',
             work2Step1Text:
                 'L’intervento è stato modellato in Blender, importato in Unreal e completato con materiali, illuminazione, arredi e contesto urbano generato.',
-            work2Step2Title: 'Produzione render e graphic design',
+            work2Step2Title: 'Produzione dei render e graphic design',
             work2Step2Text:
-                'Panorami e still verticali sono stati renderizzati in Unreal, poi rifiniti in Photoshop e Illustrator per gerarchia visiva e presentazione.',
-            work2Step3Title: 'Sviluppo del tour Marzipano',
+                'Panorami e still verticali sono stati renderizzati in Unreal, poi rifiniti in Photoshop e Illustrator per migliorarne gerarchia visiva e presentazione.',
+            work2Step3Title: 'Sviluppo del tour in Marzipano',
             work2Step3Text:
-                'I render 360 sono diventati un tour web navigabile con hotspot e transizioni tra scene progettate per una navigazione intuitiva.',
-            work2Step4Title: 'Pubblicazione delle pagine appartamento',
+                'I render a 360 gradi sono stati trasformati in un tour web navigabile, con hotspot e transizioni tra scene progettati per una navigazione intuitiva.',
+            work2Step4Title: 'Pubblicazione delle pagine degli appartamenti',
             work2Step4Text:
-                'Ogni appartamento ha ricevuto una destinazione web dedicata, combinando immagini, motion e navigazione immersiva in un’unica presentazione online.',
+                'Ogni appartamento ha ricevuto una pagina web dedicata, che combina immagini, motion e navigazione immersiva in un’unica presentazione online.',
 
             work3Title: 'Landing Page per Prodotti Architettonici e Immobiliari',
             work3Text:
-                'Landing page orientate alla conversione, progettate per presentare prodotti architettonici, sviluppi residenziali ed esperienze immobiliari immersive con lo stesso linguaggio visivo premium usato nel lavoro 3D. L’obiettivo è trasformare render, video, visualizzatori 3D e informazioni di vendita in una destinazione web chiara, curata, credibile e facile da navigare.',
+                'Landing page orientate alla conversione, progettate per presentare prodotti architettonici, sviluppi residenziali ed esperienze immobiliari immersive con lo stesso linguaggio visivo premium utilizzato nel lavoro 3D. L’obiettivo è trasformare render, video, visualizzatori 3D e informazioni di vendita in una destinazione web chiara, curata, credibile e facile da navigare.',
             work3Role:
                 'Direzione creativa, gerarchia visiva, design del layout, presentazione web e integrazione di asset render e showcase 3D.',
-            work3BodyTitle: 'Un livello web che aiuta il visual a vendere.',
+            work3BodyTitle: 'Una pagina web che aiuta a visualizzare e a vendere.',
             work3BodyText:
-                'Queste pagine sono costruite per tradurre materiale architettonico o immobiliare complesso in una presentazione immediata e premium. Invece di mostrare solo render isolati, la landing page struttura il messaggio, rafforza la fiducia e accompagna il visitatore attraverso immagini, benefici e interazione.',
-            work3WorkflowTitle: 'Posizionare, strutturare, disegnare, pubblicare.',
+                'Queste pagine sono costruite per tradurre materiale architettonico o immobiliare complesso in una presentazione immediata e premium. Invece di mostrare soltanto render isolati, la landing page struttura il messaggio, rafforza la fiducia e accompagna il visitatore attraverso immagini, benefici e interazione.',
+            work3WorkflowTitle: 'Posizionare, strutturare, progettare, pubblicare.',
             work3Step1Title: 'Posizionamento del contenuto',
             work3Step1Text:
-                'Offerta, target e visual più forti vengono identificati per primi, così la pagina comunica valore rapidamente invece di sembrare una galleria generica.',
+                'Offerta, target e visual più forti vengono individuati per primi, così la pagina comunica valore rapidamente invece di sembrare una galleria generica.',
             work3Step2Title: 'Layout e storytelling',
             work3Step2Text:
-                'La pagina viene strutturata attorno a gerarchia, ritmo e chiarezza, combinando render, testo e informazioni di prodotto in un flusso di presentazione premium.',
+                'La pagina viene strutturata intorno a gerarchia, ritmo e chiarezza, combinando render, testo e informazioni di prodotto in un flusso di presentazione premium.',
             work3Step3Title: 'Integrazione e consegna',
             work3Step3Text:
-                'Video, gallery e materiali interattivi come visualizzatori 3D possono essere integrati in una landing page responsive finale pronta per showcase o lead generation.',
+                'Video, gallery e materiali interattivi come i visualizzatori 3D possono essere integrati in una landing page responsive finale, pronta per la presentazione o la lead generation.',
 
-            aboutTitle: 'Formazione in architettura. Percorso costruito da solo tra più strumenti. Ossessionato dalla chiarezza visiva.',
+            aboutTitle: 'Formazione in architettura. Un percorso costruito in autonomia.',
             aboutText1:
-                'Sono un 3D artist e designer di Bologna. Il mio interesse per il digitale è iniziato al liceo tra Java, Scratch e un’esplorazione indipendente degli strumenti Adobe, che ha acceso la mia curiosità per il design.',
+                'Sono un 3D artist e designer. Il mio interesse per il digitale è iniziato al liceo, tra Java, Scratch e un’esplorazione indipendente degli strumenti Adobe, che ha acceso la mia curiosità per il design.',
             aboutText2:
-                'Durante il mio primo anno di Architettura al Politecnico di Torino, un corso di disegno mi ha introdotto a 3ds Max con V-Ray e ha aperto la porta al 3D e alla visualizzazione digitale. Da allora ho sviluppato un percorso in gran parte autodidatta, focalizzato sulla rappresentazione visiva, i media interattivi e un ampio set di strumenti 3D.',
+                'Durante il mio primo anno di Architettura al Politecnico di Torino, un corso di disegno mi ha introdotto a 3ds Max con V-Ray e ha aperto la strada al 3D e alla visualizzazione digitale. Da allora ho sviluppato un percorso in gran parte autodidatta, focalizzato sulla rappresentazione visiva, sui media interattivi e su un ampio insieme di strumenti 3D.',
             aboutText3:
-                'Questo percorso mi ha portato a collaborare con Primula Costruzioni, prima tramite tirocinio e poi con lavoro professionale centrato su esperienze immersive per il real estate e sistemi di presentazione.',
+                'Questo percorso mi ha portato a collaborare con Primula Costruzioni, prima attraverso un tirocinio e poi con un’attività professionale incentrata su esperienze immersive per il real estate e sistemi di presentazione.',
             contactTitle: 'Costruiamo lavori che risultino premium, chiari e impossibili da ignorare.'
+
         }
     };
 
