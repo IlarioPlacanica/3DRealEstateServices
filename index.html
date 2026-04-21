@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        name="description"
+        content="Ilario Placanica — 3D web visualization, immersive real estate tools, landing pages, and interactive property experiences."
+    />
+    <title>Ilario Placanica — Archviz Web Experiences</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+        <a class="brand" href="#top" aria-label="Go to top">
+            <span class="brand-mark">IP</span>
+            <span class="brand-text">ILARIO PLACANICA</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="#selected-work" data-i18n="navWork">Select Work</a>
+            <a href="#about" data-i18n="navAbout">About</a>
+            <a href="#contact" data-i18n="navContact">Contact</a>
+            <button class="lang-toggle" type="button" aria-label="Switch language">IT</button>
+        </nav>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Intro">
+            <div class="hero-media-grid" aria-hidden="true">
+                <figure class="hero-tile">
+                    <img src="assets/img/work-1.JPG" alt="Real Estate Experience" />
+                </figure>
+                <figure class="hero-tile">
+                    <img src="assets/img/work-2.jpg" alt="Interior visualization" />
+                </figure>
+                <figure class="hero-tile">
+                    <img src="assets/img/work-3-gallery-6-cover.png" alt="Urban viewer showcase" />
+                </figure>
+            </div>
+
+            <div class="hero-copy">
+                <h1 data-i18n="heroTitle">
+                    Designing web experiences<br />
+                    that make architecture<br />
+                    easier to sell.
+                </h1>
+                <p class="hero-text" data-i18n="heroText">
+                    3D visualizer focused on architectural storytelling, interactive real estate tools, web-based immersive experiences, and landing pages for property presentation.
+                </p>
+            </div>
+
+            <div class="hero-footer" data-i18n="heroFooter">
+                Available for premium archviz, real estate presentation systems, landing pages, and web-based immersive experiences for architecture and property marketing.
+            </div>
+        </section>
+
+        <section class="selected-work" id="selected-work">
+            <div class="section-head reveal">
+                <p class="eyebrow" data-i18n="selectedWorkEyebrow">Selected Work</p>
+                <h2 data-i18n="selectedWorkTitle">Few projects. Strong point of view.</h2>
+            </div>
+
+            <div class="project-index reveal">
+                <a
+                    class="project-index-item is-active"
+                    href="#work-1"
+                    data-preview-type="video"
+                    data-preview-src="assets/video/work-1-final.mp4"
+                >
+                    <span class="project-index-num">01</span>
+                    <span class="project-index-main">
+                        <strong data-i18n="indexWork1Title">Immersive Real Estate Experience</strong>
+                        <small data-i18n="indexWork1Meta">
+                            Unreal Engine / real-time sales presentation / architectural storytelling
+                        </small>
+                    </span>
+                </a>
+
+                <a
+                    class="project-index-item"
+                    href="#work-2"
+                    data-preview-type="video"
+                    data-preview-src="assets/video/work-2-gallery-2.mp4"
+                >
+                    <span class="project-index-num">02</span>
+                    <span class="project-index-main">
+                        <strong data-i18n="indexWork2Title">Immersive Property Cards</strong>
+                        <small data-i18n="indexWork2Meta">
+                            Web presentation / virtual tours / digital property showcase
+                        </small>
+                    </span>
+                </a>
+
+                <a
+                    class="project-index-item"
+                    href="#work-3"
+                    data-preview-type="video"
+                    data-preview-src="assets/video/work-3-final.mp4"
+                >
+                    <span class="project-index-num">03</span>
+                    <span class="project-index-main">
+                        <strong data-i18n="indexWork3Title">Landing Pages for Real Estate Presentation</strong>
+                        <small data-i18n="indexWork3Meta">
+                            Web design / conversion-focused layout / immersive product storytelling
+                        </small>
+                    </span>
+                </a>
+
+                <div class="project-index-preview" aria-hidden="true">
+                    <img id="index-preview-image" src="assets/img/work-1.JPG" alt="Selected project preview" />
+                    <video id="index-preview-video" muted loop playsinline preload="auto">
+                        <source src="assets/video/work-1-final.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section project-section--dark project-work-1" id="work-1">
+            <div class="project-hero project-hero--image" style="background-image:url('assets/img/work-1.JPG');">
+                <div class="project-hero-overlay project-hero-overlay--dark"></div>
+                <div class="project-hero-copy reveal">
+                    <p class="project-number">Work 01</p>
+                    <h2 class="project-hero-title" data-i18n="work1Title">
+                        Immersive Real Estate Experience for Primula Costruzioni
+                    </h2>
+                    <p class="project-hero-text" data-i18n="work1Text">
+                        Real-time architectural visualization software developed in Unreal Engine 5 to support the sales and presentation of a new residential building within its surrounding context.
+                        The project enables interactive exploration of the architecture and interior spaces through real-time rendering, dynamic natural lighting, and a touchscreen-first interface.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-meta reveal">
+                <div>
+                    <p class="eyebrow" data-i18n="roleLabel">Role</p>
+                    <p data-i18n="work1Role">
+                        3D visualization, environment assembly, interface design, Blueprint development, real-time presentation.
+                    </p>
+                </div>
+                <div>
+                    <p class="eyebrow" data-i18n="toolsLabel">Tools</p>
+                    <ul class="project-tool-list">
+                        <li>Unreal Engine</li>
+                        <li>Blender</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>Cesium</li>
+                        <li>ComfyUI</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-split reveal">
+                <div class="project-copy-sticky">
+                    <p class="eyebrow" data-i18n="whyItMattersLabel">Why it matters</p>
+                    <h3 class="project-body-title" data-i18n="work1BodyTitle">A sales tool, not just a render.</h3>
+                    <p data-i18n="work1BodyText">
+                        The experience was designed to make the project legible and desirable in real time. Instead of static imagery only, the interface supports active navigation, daylight variation, and spatial understanding during client presentations.
+                    </p>
+                    <div class="project-bullet-list">
+                        <p data-i18n="work1Bullet1">Real-time visualization</p>
+                        <p data-i18n="work1Bullet2">Dynamic daylight system</p>
+                        <p data-i18n="work1Bullet3">Touchscreen-ready UX</p>
+                        <p data-i18n="work1Bullet4">Context-aware presentation</p>
+                    </div>
+                </div>
+
+                <div
+                    class="project-feature-video js-open-lightbox"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Open Work 1 final video"
+                    data-type="video"
+                    data-src="assets/video/work-1-final.mp4"
+                    data-caption-en="Final real-time presentation video."
+                    data-caption-it="Video finale della presentazione real-time."
+                >
+                    <video autoplay muted loop playsinline preload="metadata" poster="assets/img/work-1.JPG">
+                        <source src="assets/video/work-1-final.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+
+            <div class="project-gallery project-gallery--four reveal">
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="image"
+                    data-src="assets/img/work-1-gallery-2.jpg"
+                    data-caption-en="Urban context assembled for the immersive real-time experience."
+                    data-caption-it="Contesto urbano assemblato per l'esperienza immersiva in tempo reale."
+                >
+                    <img src="assets/img/work-1-gallery-2.jpg" alt="Urban environment scene" />
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="image"
+                    data-src="assets/img/work-1-gallery-1.jpg"
+                    data-caption-en="Block modeling and massing development in Blender."
+                    data-caption-it="Block modeling e sviluppo delle masse in Blender."
+                >
+                    <img src="assets/img/work-1-gallery-1.jpg" alt="Block modeling in Blender" />
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="image"
+                    data-src="assets/img/work-1-gallery-3.jpg"
+                    data-caption-en="Widget Blueprint and interaction logic development."
+                    data-caption-it="Sviluppo del Widget Blueprint e della logica di interazione."
+                >
+                    <img src="assets/img/work-1-gallery-3.jpg" alt="Widget blueprint screenshot" />
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="image"
+                    data-src="assets/img/work-1-gallery-5.jpg"
+                    data-caption-en="Master Material setup and material logic development."
+                    data-caption-it="Setup del Master Material e sviluppo della logica dei materiali."
+                >
+                    <img src="assets/img/work-1-gallery-5.jpg" alt="Master Material blueprint screenshot" />
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="video"
+                    data-src="assets/video/work-1-gallery-4.mp4"
+                    data-caption-en="Logo design and animation sequence."
+                    data-caption-it="Design del logo e sequenza di animazione."
+                >
+                    <img src="assets/img/work-1-gallery-4.jpg" alt="Archisfera animation still" />
+                </button>
+            </div>
+
+            <div class="project-workflow reveal">
+                <div class="project-workflow-header">
+                    <p class="eyebrow" data-i18n="workflowLabel">Workflow</p>
+                    <h3 class="project-body-title" data-i18n="work1WorkflowTitle">
+                        From modeled context to packaged executable.
+                    </h3>
+                </div>
+
+                <div class="project-workflow-grid">
+                    <article>
+                        <span>01</span>
+                        <h4 data-i18n="work1Step1Title">Building and context modeling</h4>
+                        <p data-i18n="work1Step1Text">
+                            The architectural intervention and surrounding district were modeled in Blender to create a clean, controllable base for real-time visualization.
+                        </p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h4 data-i18n="work1Step2Title">Unreal assembly and geospatial integration</h4>
+                        <p data-i18n="work1Step2Text">
+                            The project was assembled in Unreal, enriched with Cesium context data, materials, lighting, furnishing, and atmosphere to improve readability and immersion.
+                        </p>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <h4 data-i18n="work1Step3Title">Interactive systems and packaging</h4>
+                        <p data-i18n="work1Step3Text">
+                            Blueprint logic, widgets, GameMode behavior, and controller systems were developed for touchscreen interaction, then packaged into a standalone Windows application.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section project-section--dark project-work-2" id="work-2">
+            <div class="project-hero project-hero--image" style="background-image:url('assets/img/work-2.jpg');">
+                <div class="project-hero-overlay project-hero-overlay--dark"></div>
+                <div class="project-hero-copy reveal">
+                    <p class="project-number">Work 02</p>
+                    <h2 class="project-hero-title" data-i18n="work2Title">
+                        Immersive Property Cards for Primula Costruzioni
+                    </h2>
+                    <p class="project-hero-text" data-i18n="work2Text">
+                        A series of immersive apartment pages created to support the presentation and sale of renovated units within an existing building.
+                        Each property was translated into a dedicated digital experience centered on interiors, clarity, and atmosphere, then published on the web.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-meta reveal">
+                <div>
+                    <p class="eyebrow" data-i18n="roleLabel">Role</p>
+                    <p data-i18n="work2Role">
+                        3D production, render direction, visual layout, virtual-tour integration, web presentation.
+                    </p>
+                </div>
+                <div>
+                    <p class="eyebrow" data-i18n="toolsLabel">Tools</p>
+                    <ul class="project-tool-list">
+                        <li>Unreal Engine</li>
+                        <li>Blender</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>GitHub Pages</li>
+                        <li>Marzipano</li>
+                        <li>Hunyuan 3D</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-editorial reveal">
+                <div class="project-editorial-copy">
+                    <p class="eyebrow" data-i18n="premiseLabel">Premise</p>
+                    <h3 class="project-body-title" data-i18n="work2BodyTitle">
+                        Interior-first storytelling for real estate.
+                    </h3>
+                    <p data-i18n="work2BodyText">
+                        Because the building renovation was partial, the communication focused on interior quality, navigable panoramas, and digital property presentation rather than a fully spatialized exterior experience.
+                    </p>
+                    <a
+                        class="text-link"
+                        href="https://ilarioplacanica.github.io/Alfieri/A14/"
+                        target="_blank"
+                        rel="noopener"
+                        data-i18n="visitApartmentPage"
+                    >
+                        Visit the apartment page
+                    </a>
+                </div>
+
+                <div class="project-work-2-showcase">
+                    <div
+                        class="project-media-card project-media-card--portrait project-media-card--phone js-open-lightbox"
+                        role="button"
+                        tabindex="0"
+                        aria-label="Open Work 2 final video"
+                        data-type="video"
+                        data-src="assets/video/work-2-final.mp4"
+                        data-caption-en="Final vertical motion presentation."
+                        data-caption-it="Presentazione motion finale in formato verticale."
+                    >
+                        <div class="phone-shell">
+                            <div class="phone-statusbar">
+                                <span class="phone-time">9:41</span>
+                                <div class="phone-dynamic-island"></div>
+                                <div class="phone-status-icons">
+                                    <span class="phone-signal"></span>
+                                    <span class="phone-wifi"></span>
+                                    <span class="phone-battery">100%</span>
+                                </div>
+                            </div>
+
+                            <div class="phone-screen">
+                                <video autoplay muted loop playsinline preload="metadata" poster="assets/img/work-2.jpg">
+                                    <source src="assets/video/work-2-final.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+
+                            <div class="phone-home-indicator"></div>
+                            <div class="phone-side-button"></div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="project-media-card project-media-card--tour js-open-lightbox"
+                        role="button"
+                        tabindex="0"
+                        aria-label="Open 360 tour"
+                        data-type="tour"
+                        data-src="assets/tour/work-2/index.html"
+                        data-caption-en="Interactive 360 tour built with Marzipano."
+                        data-caption-it="Tour 360 interattivo realizzato con Marzipano."
+                    >
+                        <div class="project-tour-preview">
+                            <iframe
+                                src="assets/tour/work-2/index.html"
+                                title="Marzipano tour preview"
+                                loading="lazy"
+                                tabindex="-1"
+                                aria-hidden="true"
+                            ></iframe>
+                            <span class="project-tour-badge" data-i18n="open360Tour">Open 360 tour</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-gallery project-gallery--four reveal">
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="video"
+                    data-src="assets/video/work-2-gallery-2.mp4"
+                    data-caption-en="Additional motion asset for the apartment presentation."
+                    data-caption-it="Contenuto motion aggiuntivo per la presentazione dell'appartamento."
+                >
+                    <img src="assets/img/work-2-gallery-2.jpg" alt="Apartment video still" />
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="image"
+                    data-src="assets/img/work-2-gallery-3.jpeg"
+                    data-caption-en="360 imagery used for immersive browsing."
+                    data-caption-it="Immagini 360 utilizzate per una navigazione immersiva."
+                >
+                    <img src="assets/img/work-2-gallery-3.jpeg" alt="Panorama preview" />
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="image"
+                    data-src="assets/img/work-2-gallery-4.jpg"
+                    data-caption-en="Urban context and massing generated for the experience."
+                    data-caption-it="Contesto urbano e masse generate per l'esperienza."
+                >
+                    <img src="assets/img/work-2-gallery-4.jpg" alt="Urban context model" />
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="image"
+                    data-src="assets/img/work-2.jpg"
+                    data-caption-en="Interior shot used as the case-study cover."
+                    data-caption-it="Vista interna utilizzata come cover del case study."
+                >
+                    <img src="assets/img/work-2.jpg" alt="Interior hero render" />
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="image"
+                    data-src="assets/img/work-2-gallery-5.png"
+                    data-caption-en="Additional gallery image for the apartment presentation."
+                    data-caption-it="Immagine aggiuntiva della gallery per la presentazione dell'appartamento."
+                >
+                    <img src="assets/img/work-2-gallery-5.png" alt="Work 2 gallery image 5" />
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="image"
+                    data-src="assets/img/work-2-gallery-6.png"
+                    data-caption-en="Additional gallery image for the apartment presentation."
+                    data-caption-it="Immagine aggiuntiva della gallery per la presentazione dell'appartamento."
+                >
+                    <img src="assets/img/work-2-gallery-6.png" alt="Work 2 gallery image 6" />
+                </button>
+            </div>
+
+            <div class="project-workflow reveal">
+                <div class="project-workflow-header">
+                    <p class="eyebrow" data-i18n="workflowLabel">Workflow</p>
+                    <h3 class="project-body-title" data-i18n="work2WorkflowTitle">
+                        From interior scenes to web deployment.
+                    </h3>
+                </div>
+
+                <div class="project-workflow-grid project-workflow-grid--four">
+                    <article>
+                        <span>01</span>
+                        <h4 data-i18n="work2Step1Title">Modeling and scene setup</h4>
+                        <p data-i18n="work2Step1Text">
+                            The operation was modeled in Blender, imported into Unreal, and completed with materials, lighting, furniture, and generated urban context.
+                        </p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h4 data-i18n="work2Step2Title">Render production and graphic design</h4>
+                        <p data-i18n="work2Step2Text">
+                            Panoramas and vertical stills were rendered in Unreal, then refined in Photoshop and Illustrator for hierarchy and presentation.
+                        </p>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <h4 data-i18n="work2Step3Title">Marzipano tour development</h4>
+                        <p data-i18n="work2Step3Text">
+                            The 360 renders became a navigable web tour with hotspots and scene transitions designed for intuitive browsing.
+                        </p>
+                    </article>
+                    <article>
+                        <span>04</span>
+                        <h4 data-i18n="work2Step4Title">Publishing apartment pages</h4>
+                        <p data-i18n="work2Step4Text">
+                            Each apartment received a dedicated web destination, combining imagery, motion, and immersive navigation inside a single online presentation.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section project-section--dark project-work-3" id="work-3">
+            <div class="project-hero project-hero--video">
+                <div class="project-hero-media-wrap">
+                    <video
+                        class="project-hero-video"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                        poster="assets/img/work-3.jpg"
+                    >
+                        <source src="assets/video/work-3-final.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="project-hero-overlay project-hero-overlay--dark"></div>
+
+                <div class="project-hero-copy reveal">
+                    <p class="project-number">Work 03</p>
+                    <h2 class="project-hero-title" data-i18n="work3Title">
+                        Landing Pages for Architectural and Real Estate Products
+                    </h2>
+                    <p class="project-hero-text" data-i18n="work3Text">
+                        Conversion-oriented landing pages designed to present architectural products, residential developments, and immersive property experiences with the same premium visual language used in the 3D work.
+                        The goal is to turn renders, videos, 3D viewers, and sales information into a clear web destination that feels polished, credible, and easy to navigate.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-meta reveal">
+                <div>
+                    <p class="eyebrow" data-i18n="roleLabel">Role</p>
+                    <p data-i18n="work3Role">
+                        Creative direction, visual hierarchy, layout design, web presentation, and integration of rendering and 3D showcase assets.
+                    </p>
+                </div>
+                <div>
+                    <p class="eyebrow" data-i18n="toolsLabel">Tools</p>
+                    <ul class="project-tool-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>GitHub Pages</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-editorial reveal">
+                <div class="project-editorial-copy">
+                    <p class="eyebrow" data-i18n="focusLabel">Focus</p>
+                    <h3 class="project-body-title" data-i18n="work3BodyTitle">
+                        A web layer that helps the visual work sell.
+                    </h3>
+                    <p data-i18n="work3BodyText">
+                        These pages are built to translate complex architectural or real estate material into a presentation that feels immediate and premium. Instead of showing isolated renders only, the landing page structures the message, supports trust, and gives the viewer a clear path through imagery, benefits, and interaction.
+                    </p>
+                    <a
+                        class="text-link"
+                        href="https://ilarioplacanica.github.io/Alfieri/"
+                        target="_blank"
+                        rel="noopener"
+                        data-i18n="visitLandingPage"
+                    >
+                        Visit the landing page
+                    </a>
+                </div>
+
+                <div class="project-work-3-showcase">
+                    <button
+                        class="project-media-card js-open-lightbox"
+                        type="button"
+                        data-type="video"
+                        data-src="assets/video/work-3-final.mp4"
+                        data-caption-en="Landing page motion showcase for an architectural or real estate product presentation."
+                        data-caption-it="Showcase motion della landing page per la presentazione di un prodotto architettonico o immobiliare."
+                    >
+                        <video autoplay muted loop playsinline preload="metadata" poster="assets/img/work-3.jpg" aria-hidden="true">
+                            <source src="assets/video/work-3-final.mp4" type="video/mp4" />
+                        </video>
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-gallery project-gallery--four reveal">
+                <button
+                    class="project-gallery-card project-gallery-card--viewer js-open-lightbox"
+                    type="button"
+                    data-type="viewer"
+                    data-src="assets/viewer/work-3-urban/index.html"
+                    data-caption-en="Interactive urban viewer built with Cesium for contextual site presentation."
+                    data-caption-it="Urban viewer interattivo realizzato con Cesium per la presentazione contestuale del sito."
+                >
+                    <div class="project-viewer-preview" aria-hidden="true">
+                        <span class="project-viewer-preview__eyebrow">Cesium</span>
+                        <strong class="project-viewer-preview__title" data-i18n="urbanViewerTitle">Urban Viewer</strong>
+                        <span class="project-tour-badge" data-i18n="openUrbanViewer">Open urban viewer</span>
+                    </div>
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="video"
+                    data-src="assets/video/work-3-gallery-2.mp4"
+                    data-caption-en="Section built to organize renders, copy, and selling points into a clear flow."
+                    data-caption-it="Sezione progettata per organizzare render, testi e punti di vendita in un flusso chiaro."
+                >
+                    <video autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+                        <source src="assets/video/work-3-gallery-2.mp4" type="video/mp4" />
+                    </video>
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="video"
+                    data-src="assets/video/work-3-gallery-3.mp4"
+                    data-caption-en="Presentation area for integrating stills, motion, or interactive media."
+                    data-caption-it="Area di presentazione per integrare immagini statiche, motion o media interattivi."
+                >
+                    <video autoplay muted loop playsinline preload="metadata" poster="assets/img/work-3.jpg" aria-hidden="true">
+                        <source src="assets/video/work-3-gallery-3.mp4" type="video/mp4" />
+                    </video>
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="image"
+                    data-src="assets/img/work-3-gallery-4.png"
+                    data-caption-en="Responsive design approach for premium property and product communication."
+                    data-caption-it="Approccio responsive per una comunicazione premium di immobili e prodotti."
+                >
+                    <img src="assets/img/work-3-gallery-4.png" alt="Responsive landing page layout" />
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="image"
+                    data-src="assets/img/work-3-gallery-5.png"
+                    data-caption-en="Additional render highlighting the landing page presentation system."
+                    data-caption-it="Render aggiuntivo che evidenzia il sistema di presentazione della landing page."
+                >
+                    <img src="assets/img/work-3-gallery-5.png" alt="Landing page presentation render" />
+                </button>
+
+                <button
+                    class="project-gallery-card js-open-lightbox"
+                    type="button"
+                    data-type="video"
+                    data-src="assets/video/work-3-gallery-1.mp4"
+                    data-caption-en="Hero section focused on visual impact and immediate product positioning."
+                    data-caption-it="Hero section focalizzata su impatto visivo e posizionamento immediato del prodotto."
+                >
+                    <video autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+                        <source src="assets/video/work-3-gallery-1.mp4" type="video/mp4" />
+                    </video>
+                </button>
+            </div>
+
+            <div class="project-workflow reveal">
+                <div class="project-workflow-header">
+                    <p class="eyebrow" data-i18n="workflowLabel">Workflow</p>
+                    <h3 class="project-body-title" data-i18n="work3WorkflowTitle">
+                        Position, structure, design, publish.
+                    </h3>
+                </div>
+
+                <div class="project-workflow-grid">
+                    <article>
+                        <span>01</span>
+                        <h4 data-i18n="work3Step1Title">Content positioning</h4>
+                        <p data-i18n="work3Step1Text">
+                            The offer, target audience, and strongest visuals are identified first so the page can communicate value quickly instead of feeling like a generic gallery.
+                        </p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h4 data-i18n="work3Step2Title">Layout and storytelling</h4>
+                        <p data-i18n="work3Step2Text">
+                            The page is structured around hierarchy, rhythm, and clarity, combining renders, text, and product information into a premium presentation flow.
+                        </p>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <h4 data-i18n="work3Step3Title">Integration and delivery</h4>
+                        <p data-i18n="work3Step3Text">
+                            Videos, galleries, and interactive material such as 3D viewers can be integrated into a final responsive landing page ready for showcasing or lead generation.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-grid reveal">
+                <div class="about-image-wrap">
+                    <img src="assets/img/hero.jpg" alt="Portrait of Ilario Placanica" class="about-image" />
+                </div>
+                <div class="about-copy">
+                    <p class="eyebrow" data-i18n="aboutLabel">About</p>
+                    <h2 data-i18n="aboutTitle">
+                        Architecture trained. Self-built across tools. Obsessed with visual clarity.
+                    </h2>
+                    <p data-i18n="aboutText1">
+                        I’m a 3D artist and designer from Bologna. My interest in digital media began in high school through Java, Scratch, and an independent exploration of Adobe tools, which first sparked my curiosity for design.
+                    </p>
+                    <p data-i18n="aboutText2">
+                        During my first year of Architecture at Politecnico di Torino, a drawing course introduced me to 3ds Max with V-Ray and opened the door to 3D and digital visualization. Since then I have developed a largely self-taught practice focused on visual representation, interactive media, and a broad set of 3D tools.
+                    </p>
+                    <p data-i18n="aboutText3">
+                        That path led to collaboration with Primula Costruzioni, first through an internship and then through professional work centered on immersive real estate experiences and presentation systems.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-grid reveal">
+                <div>
+                    <p class="eyebrow" data-i18n="contactLabel">Contact</p>
+                    <h2 data-i18n="contactTitle">
+                        Let’s build work that feels premium, clear, and impossible to ignore.
+                    </h2>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:ilario.placanica1999@gmail.com">ilario.placanica1999@gmail.com</a>
+                    <a href="tel:+393483216319">+39 3483216319</a>
+                    <a href="https://www.linkedin.com/in/ilario-placanica-0055a2383" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" type="button" aria-label="Close media viewer" data-i18n="lightboxClose">
+            Close
+        </button>
+        <div class="lightbox-shell">
+            <button class="lightbox-nav lightbox-nav--prev" type="button" aria-label="Previous media">&#8249;</button>
+            <div class="lightbox-stage" id="lightbox-stage"></div>
+            <button class="lightbox-nav lightbox-nav--next" type="button" aria-label="Next media">&#8250;</button>
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

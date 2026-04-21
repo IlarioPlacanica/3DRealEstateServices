@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Viewer</title>
+    <link
+        rel="stylesheet"
+        href="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Widgets/widgets.css"
+    />
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            background: #d9d3c8;
+            color: #111111;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            position: relative;
+        }
+
+        #urbanViewer {
+            width: 100%;
+            height: 100%;
+            background: #d9d3c8;
+        }
+
+        .urban-viewer-note,
+        .urban-viewer-message {
+            position: absolute;
+            left: 1rem;
+            z-index: 2;
+            max-width: min(30rem, calc(100% - 2rem));
+            padding: 0.85rem 1rem;
+            background: rgba(17, 17, 17, 0.72);
+            color: #f4f1ea;
+            font-size: 0.78rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            backdrop-filter: blur(10px);
+        }
+
+        .urban-viewer-note {
+            bottom: 1rem;
+        }
+
+        .urban-viewer-message {
+            top: 1rem;
+            display: none;
+        }
+
+        .urban-viewer-message.is-visible {
+            display: block;
+        }
+    </style>
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Cesium.js"></script>
+</head>
+<body>
+    <div id="urbanViewer"></div>
+    <div class="urban-viewer-note">Drag to orbit. Scroll or pinch to zoom.</div>
+    <div class="urban-viewer-message" id="urbanViewerMessage"></div>
+    <script src="./urban-viewer.js"></script>
+</body>
+</html>
