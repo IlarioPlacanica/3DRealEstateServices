@@ -79,7 +79,7 @@
             galleryFiveImages: '5 Images',
             partnerVisit: 'Visit site',
 
-            work1Title: 'Immersive Real Estate Experience for Primula Costruzioni',
+            work1Title: 'Immersive Real Estate Experience',
             work1Text:
                 'Real-time architectural visualization software developed in Unreal Engine 5 to support the sales and presentation of a new residential building within its surrounding context. The project enables interactive exploration of the architecture and interior spaces through real-time rendering, dynamic natural lighting, and a touchscreen-first interface.',
             work1Role:
@@ -155,9 +155,7 @@
                 'I’m a 3D artist and designer from Bologna. My interest in digital media began in high school through Java, Scratch, and an independent exploration of Adobe tools, which first sparked my curiosity for design.',
             aboutText2:
                 'During my first year of Architecture at Politecnico di Torino, a drawing course introduced me to 3ds Max with V-Ray and opened the door to 3D and digital visualization. Since then I have developed a largely self-taught practice focused on visual representation, interactive media, and a broad set of 3D tools.',
-            aboutText3:
-                'That path led to collaboration with Primula Costruzioni, first through an internship and then through professional work centered on immersive real estate experiences and presentation systems.',
-            contactTitle: 'Let’s build work that feels premium, clear, and impossible to ignore.'
+            contactTitle: 'Let’s build projects together that feel premium, clear, and impossible to ignore.'
         },
 
        it: {
@@ -200,7 +198,7 @@
             galleryFiveImages: '5 immagini',
             partnerVisit: 'Visita il sito',
 
-            work1Title: 'Esperienza Immersiva per il Real Estate di Primula Costruzioni',
+            work1Title: 'Esperienza Immersiva per il Real Estate',
             work1Text:
                 "Software di visualizzazione architettonica in tempo reale sviluppato in Unreal Engine 5 per supportare la vendita e la presentazione di un nuovo edificio residenziale inserito nel suo contesto urbano. Il progetto consente un'esplorazione interattiva dell'architettura e degli spazi interni attraverso rendering real-time, luce naturale dinamica e un'interfaccia pensata per il touchscreen.",
             work1Role:
@@ -276,9 +274,7 @@
                 'Sono un 3D artist e designer. Il mio interesse per il digitale è iniziato al liceo, tra Java, Scratch e un’esplorazione indipendente degli strumenti Adobe, che ha acceso la mia curiosità per il design.',
             aboutText2:
                 'Durante il mio primo anno di Architettura al Politecnico di Torino, un corso di disegno mi ha introdotto a 3ds Max con V-Ray e ha aperto la strada al 3D e alla visualizzazione digitale. Da allora ho sviluppato un percorso in gran parte autodidatta, focalizzato sulla rappresentazione visiva, sui media interattivi e su un ampio insieme di strumenti 3D.',
-            aboutText3:
-                'Questo percorso mi ha portato a collaborare con Primula Costruzioni, prima attraverso un tirocinio e poi con un’attività professionale incentrata su esperienze immersive per il real estate e sistemi di presentazione.',
-            contactTitle: 'Costruiamo lavori che risultino premium, chiari e impossibili da ignorare.'
+            contactTitle: 'Costruiamo insieme progetti che risultino premium, chiari e impossibili da ignorare.'
 
         }
     };
