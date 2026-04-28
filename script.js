@@ -65,6 +65,7 @@
             workflowLabel: 'Workflow',
             premiseLabel: 'Premise',
             focusLabel: 'Focus',
+            partnersLabel: 'Partners',
             aboutLabel: 'About',
             contactLabel: 'Contact',
             lightboxClose: 'Close',
@@ -73,6 +74,7 @@
             urbanViewerTitle: 'Urban Viewer',
             openUrbanViewer: 'Open urban viewer',
             open360Tour: 'Open 360 tour',
+            partnerVisit: 'Visit site',
 
             work1Title: 'Immersive Real Estate Experience for Primula Costruzioni',
             work1Text:
@@ -137,6 +139,13 @@
             work3Step3Title: 'Integration and delivery',
             work3Step3Text:
                 'Videos, galleries, and interactive material such as 3D viewers can be integrated into a final responsive landing page ready for showcasing or lead generation.',
+            partnersTitle: 'Companies and studios I collaborate with.',
+            partnersText:
+                'Ongoing collaborations where visualization, web presentation, and project communication support work across real estate, architecture, and spatial communication.',
+            partnerPrimulaMeta:
+                'Immersive experiences, presentation tools, and digital communication for real estate.',
+            partnerCubicoMeta:
+                'Web presentation, visual storytelling, and digital support for projects, spaces, and communication.',
 
             aboutTitle: 'Architecture trained. Self-built across tools. Obsessed with visual clarity.',
             aboutText1:
@@ -175,6 +184,7 @@
             workflowLabel: 'Workflow',
             premiseLabel: 'Premessa',
             focusLabel: 'Focus',
+            partnersLabel: 'Partners',
             aboutLabel: 'Chi sono',
             contactLabel: 'Contatti',
             lightboxClose: 'Chiudi',
@@ -183,6 +193,7 @@
             urbanViewerTitle: 'Urban Viewer',
             openUrbanViewer: 'Apri Urban Viewer',
             open360Tour: 'Apri il tour 360',
+            partnerVisit: 'Visita il sito',
 
             work1Title: 'Esperienza Immersiva per il Real Estate di Primula Costruzioni',
             work1Text:
@@ -247,6 +258,13 @@
             work3Step3Title: 'Integrazione e consegna',
             work3Step3Text:
                 'Video, gallery e materiali interattivi come i visualizzatori 3D possono essere integrati in una landing page responsive finale, pronta per la presentazione o la lead generation.',
+            partnersTitle: 'Aziende e studi con cui collaboro.',
+            partnersText:
+                'Collaborazioni attive in cui visualizzazione, presentazione web e comunicazione del progetto supportano lavori tra real estate, architettura e comunicazione dello spazio.',
+            partnerPrimulaMeta:
+                'Esperienze immersive, strumenti di presentazione e comunicazione digitale per il real estate.',
+            partnerCubicoMeta:
+                'Presentazione web, racconto visivo e supporto digitale per progetti, spazi e comunicazione.',
 
             aboutTitle: 'Formazione in architettura. Un percorso costruito in autonomia.',
             aboutText1:

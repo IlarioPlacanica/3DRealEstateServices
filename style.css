@@ -958,6 +958,128 @@ main {
     border-bottom: 1px solid;
 }
 
+.partners-section {
+    padding: 0 1.25rem 8rem;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(215, 208, 196, 0.1), transparent 0 28%),
+        linear-gradient(180deg, #060606 0%, #0b0b0b 100%);
+    border-top: 1px solid var(--line);
+}
+
+.partners-shell {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.74fr) minmax(0, 1fr);
+    gap: 2rem;
+    padding-top: 4.5rem;
+    width: min(var(--max), calc(100vw - 2.5rem));
+    margin-inline: auto;
+}
+
+.partners-intro {
+    padding-top: 0.5rem;
+}
+
+.partners-intro h2 {
+    margin: 0;
+    max-width: 11ch;
+    font-size: clamp(2.5rem, 6vw, 5.2rem);
+    font-weight: 700;
+    line-height: 0.92;
+    letter-spacing: -0.045em;
+}
+
+.partners-intro p:last-child {
+    margin: 1.3rem 0 0;
+    max-width: 34rem;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.partner-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    min-height: 23rem;
+    padding: 1.4rem;
+    overflow: hidden;
+    border: 1px solid rgba(244, 241, 234, 0.12);
+    background:
+        radial-gradient(circle at 82% 18%, rgba(215, 208, 196, 0.14), transparent 0 26%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    transition:
+        transform 0.45s var(--ease),
+        border-color 0.45s var(--ease),
+        background-color 0.45s var(--ease);
+}
+
+.partner-card::before {
+    content: '';
+    position: absolute;
+    inset: 1rem;
+    border: 1px solid rgba(244, 241, 234, 0.05);
+    pointer-events: none;
+}
+
+.partner-card:hover {
+    transform: translateY(-0.3rem);
+    border-color: rgba(244, 241, 234, 0.26);
+}
+
+.partner-card__index,
+.partner-card__body,
+.partner-card__cta {
+    position: relative;
+    z-index: 1;
+}
+
+.partner-card__index,
+.partner-card__cta,
+.partner-card__domain {
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.partner-card__index {
+    color: rgba(243, 241, 235, 0.58);
+}
+
+.partner-card__body h3 {
+    margin: 0;
+    font-size: clamp(1.8rem, 3.8vw, 3rem);
+    line-height: 0.94;
+    letter-spacing: -0.045em;
+}
+
+.partner-card__body p {
+    margin: 1rem 0 1.35rem;
+    max-width: 26rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+.partner-card__domain {
+    display: inline-flex;
+    width: fit-content;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid rgba(244, 241, 234, 0.12);
+    color: var(--sand);
+}
+
+.partner-card__cta {
+    color: var(--white);
+}
+
 .about-section {
     background: #0b0b0b;
 }
@@ -1127,6 +1249,7 @@ main {
 
     .project-split,
     .project-editorial,
+    .partners-shell,
     .about-grid,
     .contact-grid,
     .project-workflow-header,
@@ -1153,7 +1276,8 @@ main {
     .project-gallery,
     .project-workflow-grid,
     .project-workflow-grid--four,
-    .project-work-2-showcase {
+    .project-work-2-showcase,
+    .partners-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1225,6 +1349,7 @@ main {
     .project-gallery,
     .project-workflow,
     .project-statement,
+    .partners-shell,
     .project-hero-copy,
     .about-grid,
     .contact-grid,
@@ -1233,6 +1358,7 @@ main {
     }
 
     .selected-work,
+    .partners-section,
     .about-section,
     .contact-section {
         padding-inline: 1rem;
