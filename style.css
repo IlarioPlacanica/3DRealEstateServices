@@ -1121,8 +1121,9 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 2rem;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 23rem;
     min-height: 23rem;
     padding: 1.4rem;
     overflow: hidden;
@@ -1147,7 +1148,7 @@ main {
     background:
         linear-gradient(180deg, rgba(6, 6, 6, 0.18) 0%, rgba(6, 6, 6, 0.8) 100%),
         radial-gradient(circle at 82% 18%, rgba(215, 208, 196, 0.12), transparent 0 26%),
-        url('assets/img/cubico.webp') center / cover no-repeat;
+        url('assets/img/cubico.png') center / cover no-repeat;
 }
 
 .partner-card::before {
@@ -1161,13 +1162,6 @@ main {
 .partner-card:hover {
     transform: translateY(-0.3rem);
     border-color: rgba(244, 241, 234, 0.26);
-}
-
-.partner-card__index,
-.partner-card__body,
-.partner-card__cta {
-    position: relative;
-    z-index: 1;
 }
 
 .partner-card__index,
@@ -1198,10 +1192,13 @@ main {
 }
 
 .partner-card__domain {
+    position: relative;
+    z-index: 1;
     display: inline-flex;
     width: fit-content;
     padding: 0.7rem 0.8rem;
     border: 1px solid rgba(244, 241, 234, 0.12);
+    background: rgba(5, 5, 5, 0.72);
     color: var(--sand);
 }
 
