@@ -1136,6 +1136,20 @@ main {
         background-color 0.45s var(--ease);
 }
 
+.partner-card--primula {
+    background:
+        linear-gradient(180deg, rgba(6, 6, 6, 0.18) 0%, rgba(6, 6, 6, 0.78) 100%),
+        radial-gradient(circle at 82% 18%, rgba(215, 208, 196, 0.14), transparent 0 26%),
+        url('assets/img/primula.png') center 22% / cover no-repeat;
+}
+
+.partner-card--cubico {
+    background:
+        linear-gradient(180deg, rgba(6, 6, 6, 0.18) 0%, rgba(6, 6, 6, 0.8) 100%),
+        radial-gradient(circle at 82% 18%, rgba(215, 208, 196, 0.12), transparent 0 26%),
+        url('assets/img/cubico.webp') center / cover no-repeat;
+}
+
 .partner-card::before {
     content: '';
     position: absolute;
