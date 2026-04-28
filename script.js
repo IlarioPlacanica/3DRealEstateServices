@@ -14,6 +14,7 @@
         previewImage: document.getElementById('index-preview-image'),
         previewVideo: document.getElementById('index-preview-video'),
         previewVideoSource: document.querySelector('#index-preview-video source'),
+        previewCarousels: Array.from(document.querySelectorAll('.js-preview-carousel')),
 
         lightbox: document.getElementById('lightbox'),
         lightboxStage: document.getElementById('lightbox-stage'),
@@ -74,6 +75,8 @@
             urbanViewerTitle: 'Urban Viewer',
             openUrbanViewer: 'Open urban viewer',
             open360Tour: 'Open 360 tour',
+            openImageCarousel: 'Open fullscreen',
+            galleryFiveImages: '5 Images',
             partnerVisit: 'Visit site',
 
             work1Title: 'Immersive Real Estate Experience for Primula Costruzioni',
@@ -193,6 +196,8 @@
             urbanViewerTitle: 'Urban Viewer',
             openUrbanViewer: 'Apri Urban Viewer',
             open360Tour: 'Apri il tour 360',
+            openImageCarousel: 'Apri fullscreen',
+            galleryFiveImages: '5 immagini',
             partnerVisit: 'Visita il sito',
 
             work1Title: 'Esperienza Immersiva per il Real Estate di Primula Costruzioni',
@@ -414,6 +419,94 @@
         });
     }
 
+    function initPreviewCarousels() {
+        if (!ui.previewCarousels.length) return;
+
+        ui.previewCarousels.forEach((carousel) => {
+            const viewport = carousel.querySelector('.project-preview-carousel__viewport');
+            const track = carousel.querySelector('.project-preview-carousel__track');
+            const slides = Array.from(track?.querySelectorAll('.js-open-lightbox') || []);
+            const prevButton = carousel.querySelector('.project-preview-carousel__nav--prev');
+            const nextButton = carousel.querySelector('.project-preview-carousel__nav--next');
+            const currentLabel = carousel.querySelector('.project-preview-carousel__status-current');
+            const totalLabel = carousel.querySelector('.project-preview-carousel__status-total');
+
+            if (!viewport || !track || !slides.length) return;
+
+            if (totalLabel) {
+                totalLabel.textContent = String(slides.length).padStart(2, '0');
+            }
+
+            const getCurrentIndex = () => {
+                const scrollLeft = viewport.scrollLeft;
+                let closestIndex = 0;
+                let closestDistance = Number.POSITIVE_INFINITY;
+
+                slides.forEach((slide, index) => {
+                    const distance = Math.abs(slide.offsetLeft - scrollLeft);
+                    if (distance < closestDistance) {
+                        closestDistance = distance;
+                        closestIndex = index;
+                    }
+                });
+
+                return closestIndex;
+            };
+
+            const updateState = () => {
+                const currentIndex = getCurrentIndex();
+
+                if (currentLabel) {
+                    currentLabel.textContent = String(currentIndex + 1).padStart(2, '0');
+                }
+
+                if (prevButton) {
+                    prevButton.disabled = currentIndex === 0;
+                }
+
+                if (nextButton) {
+                    nextButton.disabled = currentIndex === slides.length - 1;
+                }
+            };
+
+            const scrollToSlide = (index) => {
+                const clampedIndex = Math.max(0, Math.min(index, slides.length - 1));
+                viewport.scrollTo({
+                    left: slides[clampedIndex].offsetLeft,
+                    behavior: prefersReducedMotion ? 'auto' : 'smooth'
+                });
+            };
+
+            if (prevButton) {
+                prevButton.addEventListener('click', () => {
+                    scrollToSlide(getCurrentIndex() - 1);
+                });
+            }
+
+            if (nextButton) {
+                nextButton.addEventListener('click', () => {
+                    scrollToSlide(getCurrentIndex() + 1);
+                });
+            }
+
+            viewport.addEventListener('scroll', updateState, { passive: true });
+            viewport.addEventListener('keydown', (event) => {
+                if (event.key === 'ArrowLeft') {
+                    event.preventDefault();
+                    scrollToSlide(getCurrentIndex() - 1);
+                }
+
+                if (event.key === 'ArrowRight') {
+                    event.preventDefault();
+                    scrollToSlide(getCurrentIndex() + 1);
+                }
+            });
+
+            window.addEventListener('resize', updateState);
+            updateState();
+        });
+    }
+
     function clearLightboxStage() {
         if (!ui.lightboxStage) return;
 
@@ -431,6 +524,27 @@
         }
 
         ui.lightboxStage.innerHTML = '';
+    }
+
+    function getLightboxCaption(item, lang = currentLang) {
+        if (!item) return '';
+        if (lang === 'it' && item.captionIt) return item.captionIt;
+        if (lang === 'en' && item.captionEn) return item.captionEn;
+        return item.caption || item.captionEn || item.captionIt || '';
+    }
+
+    function buildLightboxItem(trigger) {
+        return {
+            type: trigger.dataset.type || 'image',
+            src: trigger.dataset.src || '',
+            caption: trigger.dataset.caption || '',
+            captionEn: trigger.dataset.captionEn || trigger.dataset.caption || '',
+            captionIt: trigger.dataset.captionIt || trigger.dataset.caption || ''
+        };
+    }
+
+    function getLightboxGroupContainer(trigger) {
+        return trigger.closest('[data-lightbox-group]') || trigger.closest('.project-gallery');
     }
 
     function createLightboxMedia(type, src, caption) {
@@ -480,10 +594,11 @@
         clearLightboxStage();
 
         const item = lightboxItems[lightboxIndex];
-        const mediaNode = createLightboxMedia(item.type, item.src, item.caption);
+        const caption = getLightboxCaption(item);
+        const mediaNode = createLightboxMedia(item.type, item.src, caption);
 
         ui.lightboxStage.appendChild(mediaNode);
-        ui.lightboxCaption.textContent = item.caption || '';
+        ui.lightboxCaption.textContent = caption;
 
         if (mediaNode.tagName === 'VIDEO') {
             safePlay(mediaNode);
@@ -507,7 +622,7 @@
     }
 
     function openLightbox(type, src, caption = '') {
-        openLightboxGroup([{ type, src, caption }], 0);
+        openLightboxGroup([{ type, src, caption, captionEn: caption, captionIt: caption }], 0);
     }
 
     function showPreviousLightboxItem() {
@@ -536,25 +651,15 @@
     }
 
     function buildGalleryItems(trigger) {
-        const gallery = trigger.closest('.project-gallery');
+        const gallery = getLightboxGroupContainer(trigger);
 
         if (!gallery) {
-            return [
-                {
-                    type: trigger.dataset.type || 'image',
-                    src: trigger.dataset.src || '',
-                    caption: trigger.dataset.caption || ''
-                }
-            ];
+            return [buildLightboxItem(trigger)];
         }
 
         const galleryTriggers = Array.from(gallery.querySelectorAll('.js-open-lightbox'));
 
-        return galleryTriggers.map((item) => ({
-            type: item.dataset.type || 'image',
-            src: item.dataset.src || '',
-            caption: item.dataset.caption || ''
-        }));
+        return galleryTriggers.map(buildLightboxItem);
     }
 
     function initLightbox() {
@@ -564,7 +669,7 @@
             trigger.addEventListener('click', (event) => {
                 event.preventDefault();
 
-                const gallery = trigger.closest('.project-gallery');
+                const gallery = getLightboxGroupContainer(trigger);
                 const items = buildGalleryItems(trigger);
 
                 if (gallery) {
@@ -674,10 +779,9 @@
         localStorage.setItem('site-language', lang);
 
         if (ui.lightbox && ui.lightbox.classList.contains('is-open') && lightboxItems.length) {
-            const triggerElements = Array.from(document.querySelectorAll('.js-open-lightbox'));
-            const openTrigger = triggerElements[lightboxIndex];
-            if (openTrigger && openTrigger.dataset.caption) {
-                ui.lightboxCaption.textContent = openTrigger.dataset.caption;
+            const currentItem = lightboxItems[lightboxIndex];
+            if (currentItem) {
+                ui.lightboxCaption.textContent = getLightboxCaption(currentItem, lang);
             }
         }
     }
@@ -697,6 +801,7 @@
         initMenu();
         initRevealObserver();
         initProjectIndex();
+        initPreviewCarousels();
         initLightbox();
         initKeyboardShortcuts();
         initLanguageToggle();
