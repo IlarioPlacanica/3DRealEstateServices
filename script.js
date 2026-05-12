@@ -124,7 +124,7 @@
             work2Step4Text:
                 'Each apartment received a dedicated web destination, combining imagery, motion, and immersive navigation inside a single online presentation.',
 
-            work3Title: 'Landing Pages for Architectural and Real Estate Products',
+            work3Title: 'Landing Pages for Real Estate Products',
             work3Text:
                 'Conversion-oriented landing pages designed to present architectural products, residential developments, and immersive property experiences with the same premium visual language used in the 3D work. The goal is to turn renders, videos, 3D viewers, and sales information into a clear web destination that feels polished, credible, and easy to navigate.',
             work3Role:
@@ -150,11 +150,14 @@
             partnerCubicoMeta:
                 'Web presentation, visual storytelling, and digital support for projects, spaces, and communication.',
 
-            aboutTitle: 'Architecture trained. Self-built across tools. Obsessed with visual clarity.',
+            aboutTitle:
+                'I create high-end 3D and web experiences that help architecture and real estate projects sell before they are built.',
             aboutText1:
-                'I’m a 3D artist and designer from Bologna. My interest in digital media began in high school through Java, Scratch, and an independent exploration of Adobe tools, which first sparked my curiosity for design.',
+                'My work combines architectural visualization, real-time 3D, 360° tours, and digital interface design to transform renders, models, plans, and project information into premium sales tools.',
             aboutText2:
-                'During my first year of Architecture at Politecnico di Torino, a drawing course introduced me to 3ds Max with V-Ray and opened the door to 3D and digital visualization. Since then I have developed a largely self-taught practice focused on visual representation, interactive media, and a broad set of 3D tools.',
+                'I work at the intersection of visual storytelling and commercial presentation, helping developers, agencies, and architecture studios explain spaces clearly, communicate value, and create stronger first impressions.',
+            aboutText3:
+                'Every project is designed to feel refined, easy to understand, and ready to support real conversations with buyers, investors, and clients.',
             contactTitle: 'Let’s build projects together that feel premium, clear, and impossible to ignore.'
         },
 
@@ -243,7 +246,7 @@
             work2Step4Text:
                 'Ogni appartamento ha ricevuto una pagina web dedicata, che combina immagini, motion e navigazione immersiva in un’unica presentazione online.',
 
-            work3Title: 'Landing Page per Prodotti Architettonici e Immobiliari',
+            work3Title: 'Landing Page per Prodotti Immobiliari',
             work3Text:
                 'Landing page orientate alla conversione, progettate per presentare prodotti architettonici, sviluppi residenziali ed esperienze immobiliari immersive con lo stesso linguaggio visivo premium utilizzato nel lavoro 3D. L’obiettivo è trasformare render, video, visualizzatori 3D e informazioni di vendita in una destinazione web chiara, curata, credibile e facile da navigare.',
             work3Role:
@@ -269,11 +272,14 @@
             partnerCubicoMeta:
                 'Presentazione web, racconto visivo e supporto digitale per progetti, spazi e comunicazione.',
 
-            aboutTitle: 'Formazione in architettura. Un percorso costruito in autonomia.',
+            aboutTitle:
+                'Creo esperienze 3D e web di alto livello che aiutano i progetti di architettura e real estate a vendere prima ancora di essere costruiti.',
             aboutText1:
-                'Sono un 3D artist e designer. Il mio interesse per il digitale è iniziato al liceo, tra Java, Scratch e un’esplorazione indipendente degli strumenti Adobe, che ha acceso la mia curiosità per il design.',
+                'Il mio lavoro combina visualizzazione architettonica, 3D in tempo reale, tour a 360° e design di interfacce digitali per trasformare render, modelli, planimetrie e informazioni di progetto in strumenti di vendita premium.',
             aboutText2:
-                'Durante il mio primo anno di Architettura al Politecnico di Torino, un corso di disegno mi ha introdotto a 3ds Max con V-Ray e ha aperto la strada al 3D e alla visualizzazione digitale. Da allora ho sviluppato un percorso in gran parte autodidatta, focalizzato sulla rappresentazione visiva, sui media interattivi e su un ampio insieme di strumenti 3D.',
+                'Lavoro all’intersezione tra storytelling visivo e presentazione commerciale, aiutando developer, agenzie e studi di architettura a spiegare gli spazi con chiarezza, comunicare il valore e creare prime impressioni più forti.',
+            aboutText3:
+                'Ogni progetto è pensato per risultare curato, facile da comprendere e pronto a supportare conversazioni reali con acquirenti, investitori e clienti.',
             contactTitle: 'Costruiamo insieme progetti che risultino premium, chiari e impossibili da ignorare.'
 
         }
