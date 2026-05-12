@@ -76,7 +76,7 @@
             openUrbanViewer: 'Open urban viewer',
             open360Tour: 'Open 360 tour',
             openImageCarousel: 'Open fullscreen',
-            galleryFiveImages: '5 Images',
+            gallerySixImages: '6 Images',
             partnerVisit: 'Visit site',
 
             work1Title: 'Immersive Real Estate Experience',
@@ -198,7 +198,7 @@
             openUrbanViewer: 'Apri Urban Viewer',
             open360Tour: 'Apri il tour 360',
             openImageCarousel: 'Apri fullscreen',
-            galleryFiveImages: '5 immagini',
+            gallerySixImages: '6 immagini',
             partnerVisit: 'Visita il sito',
 
             work1Title: 'Esperienza Immersiva per il Real Estate',
