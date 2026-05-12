@@ -339,7 +339,6 @@ main {
 }
 
 .section-head h2,
-.about-copy h2,
 .contact-grid h2 {
     max-width: 12ch;
     font-size: clamp(2.5rem, 6vw, 5.4rem);
@@ -1208,10 +1207,6 @@ main {
 
 .about-section {
     background: #0b0b0b;
-}
-
-.about-copy h2 {
-    font-size: clamp(2rem, 4.8vw, 4.2rem);
 }
 
 .about-grid {
