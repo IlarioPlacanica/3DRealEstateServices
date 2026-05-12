@@ -1210,6 +1210,10 @@ main {
     background: #0b0b0b;
 }
 
+.about-copy h2 {
+    font-size: clamp(2rem, 4.8vw, 4.2rem);
+}
+
 .about-grid {
     grid-template-columns: 0.72fr 1fr;
     align-items: stretch;
