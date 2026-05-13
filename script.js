@@ -43,7 +43,7 @@
             pageTitle: 'Ilario Placanica — Archviz Web Experiences',
             metaDescription:
                 'Ilario Placanica — 3D web visualization, immersive real estate tools, landing pages, and interactive property experiences.',
-            navWork: 'Select Work',
+            navWork: 'Select Service',
             navAbout: 'About',
             navContact: 'Contact',
             heroTitle:
@@ -165,7 +165,7 @@
             pageTitle: 'Ilario Placanica — Esperienze Web per Architettura e Real Estate',
             metaDescription:
                 'Ilario Placanica — visualizzazione 3D per il web, strumenti immersivi per il real estate, landing page ed esperienze interattive per la presentazione di immobili.',
-            navWork: 'Progetti',
+            navWork: 'Servizi',
             navAbout: 'Chi sono',
             navContact: 'Contatti',
             heroTitle:
